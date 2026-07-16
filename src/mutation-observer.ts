@@ -30,6 +30,14 @@ function hideUnwantedElements(root: Element | Document): void {
     }
   }
 
+  // Sigh
+  for (const btn of root.querySelectorAll('button')) {
+    if (btn.textContent?.includes('FE Price Chart') && !hiddenElements.has(btn)) {
+      (btn as HTMLElement).style.display = 'none';
+      hiddenElements.add(btn);
+    }
+  }
+
   const langSwitchers = root.querySelectorAll('.language-switcher');
   for (const el of langSwitchers) {
     const container = el.closest('.px-1');
