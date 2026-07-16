@@ -15,11 +15,11 @@
     "release": "tsx src/scripts/release.ts"
   },
   "devDependencies": {
-    "@types/node": "^25.0.10",
-    "7zip-min": "^2.1.0",
-    "esbuild": "^0.27.2",
+    "@types/node": "^26.1.1",
+    "7zip-min": "^3.0.1",
+    "esbuild": "^0.28.1",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   },
   "keywords": [
     "torchlight-infinite",
